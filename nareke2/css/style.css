@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Lobster-Regular';
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'CormorantGaramond-Regular', sans-serif;
+  text-align: center;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  padding: 2rem;
+  background: url(../img/main_bg.jpg) no-repeat top;
+}
+.main-header img {
+  width: 128px;
+  height: 128px;
+  border-radius: 100px;
+}
+.main-menu {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  background-color: #263b56;
+  opacity: .9;
+  height: 30px;
+}
+.main-menu a {
+  margin-right: 2rem;
+  color: #fff;
+}
+.main-form {
+  color: #fff;
+  padding: 3rem;
+  margin-top: 2rem;
+  text-align: left;
+  background-color: #263b56;
+  font-size: 1.4rem;
+  opacity: .9;
+}
+.main-form h1 {
+  font-family: 'Lobster-Regular', sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.main-form .inp {
+  font-size: 1.4rem;
+  width: 20rem;
+  margin-right: 2rem;
+}
+.main-form input {
+  font-size: 1.4rem;
+  padding: 0.6rem;
+}
+.main-form h2 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+@media (max-width: 767px) {
+  .main-form {
+    padding: 1rem;
+  }
+}
