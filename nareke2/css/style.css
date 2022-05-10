@@ -365,7 +365,7 @@ a {
   border-bottom: 4px solid #4f7c97;
   font-size: 1.4rem;
   margin-bottom: 2rem;
-  width: 22rem;
+  width: 80%;
 }
 .modal-name input.name {
   background: url(../img/man.png) no-repeat center left;
@@ -378,7 +378,7 @@ a {
 }
 .modal-date p {
   display: inline;
-  width: 10rem;
+  width: 40%;
   margin-right: 2rem;
   padding: 3rem 0rem;
 }
@@ -392,7 +392,7 @@ a {
   border-bottom: 4px solid #4f7c97;
   font-size: 1.4rem;
   margin-bottom: 2rem;
-  width: 10rem;
+  width: 40%;
   margin-right: 2rem;
 }
 .modal-header {
