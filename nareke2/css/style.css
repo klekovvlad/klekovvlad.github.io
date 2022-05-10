@@ -379,7 +379,7 @@ a {
 .modal-date p {
   display: inline;
   width: 10rem;
-  margin-right: 2rem;
+  margin-right: 0rem;
   padding: 3rem;
 }
 .modal-date input.date {
