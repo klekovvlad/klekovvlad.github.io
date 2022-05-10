@@ -519,7 +519,7 @@ a {
   }
 }
 
-@media (max width: 320px) {
+@media (max width: 321px) {
 .header-link {
 font-size: 1.2rem;
 }
