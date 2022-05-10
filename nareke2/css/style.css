@@ -380,7 +380,7 @@ a {
   display: inline;
   width: 10rem;
   margin-right: 0rem;
-  padding: 3rem;
+  padding: 3rem 0rem;
 }
 .modal-date input.date {
   text-align: left;
