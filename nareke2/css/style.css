@@ -524,7 +524,7 @@ a {
 font-size: 1.2rem;
 }
 .header-phone {
-font-size: 1.2rem;
+display: none;
 }
 .header-social img {
 height: 24px;
