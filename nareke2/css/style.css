@@ -110,7 +110,7 @@ a {
 }
 .house {
   background: #4f7c97 url(../img/line.png) bottom right no-repeat;
-  padding: 4rem;
+  padding: 4rem 4rem 6rem 4rem;
   color: #253c56;
   font-family: 'TenorSans-Regular', sans-serif;
 }
@@ -343,7 +343,7 @@ a {
     font-size: 1.8rem;
   }
   .house {
-    padding: 4rem 1rem;
+    padding: 4rem 1rem 6rem 1rem;
   }
   .house-foto {
     margin-left: 0rem;
