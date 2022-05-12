@@ -484,6 +484,8 @@ opacity: 0.3;
   .header-social {
     text-align: center;
   }
+.main {
+height: 100vh;}
   .main h1 {
     font-size: 2.8rem;
   }
