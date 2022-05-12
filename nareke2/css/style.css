@@ -467,6 +467,9 @@ a {
   .main-logo img.tel {
     display: inline-block;
   }
+.header {
+background: none;
+}
   .header-logo {
     text-align: center;
   }
