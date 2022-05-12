@@ -469,7 +469,7 @@ a {
     display: inline-block;
   }
 .header {
-opacity: 0.3;
+background: none;
 }
   .header-logo {
     text-align: center;
