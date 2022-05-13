@@ -1,0 +1,713 @@
+@font-face {
+    font-family: 'Raleway-Bold';
+    src:url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src:url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TenorSans-Regular';
+    src:url('../fonts/TenorSans-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.brand_font() {font-family: 'TenorSans-Regular', sans-serif;}
+.bold() {font-family: 'Raleway-Bold', sans-serif;}
+.reg() {font-family: 'Raleway-Regular', sans-serif;}
+
+@blue: #253c56;
+@light_blue: #4f7c97;   
+@light: #eee5d2;
+
+html {
+    font-size: 10px;
+}
+body {
+    text-align: center;
+    background-color: @light_blue;
+}
+button, input, a, textarea {
+    &:focus {
+        outline: none;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+.main {
+    background: @light;
+    &-logo {
+        padding: 8rem 0rem 10rem 0rem;
+        .reg();
+        color: @blue;
+        nav {
+            display: none;
+        }
+        img {
+            height: 60px;
+            margin-bottom: 2rem;
+        }
+        img.tel {
+            display: none;
+        }
+        h1 {
+            font-size: 4.2rem;
+            .bold();
+        }
+        h2 {
+            margin: 3rem 0rem 5rem 0rem;
+            font-size: 2.4rem;
+        }
+        button {
+            font-size: 2.4rem;
+            border: 1px solid @blue;
+            border-radius: 30px;
+            padding: 1rem 4rem;
+            background-color: @blue;
+            color: @light;
+            .bold();
+            overflow:hidden;
+        }
+        button:hover {
+            box-shadow: 0 0 1rem @blue;
+            transition: 0.5s;
+        }
+    }
+}
+.header {
+    background-color: @blue;
+    padding: 1rem;
+    opacity: 0.9;
+    &-logo {
+        text-align: left;
+    }
+    &-logotel {
+        display: none;
+    }
+    &-link {
+        display: inline-block;
+        text-align: left;
+        font-size: 1.8rem;
+        .bold();
+        padding: 2rem;
+        a{
+            color: @light;
+            margin-right: 1rem;
+            position: relative;
+            cursor: pointer;
+        }
+        a:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px; /* Высота линии */
+            background-color: @light; /* Цвет подчеркивания при исчезании линии*/
+            transition: width 0.5s; /* Время эффекта */
+        }
+        a:hover:after {
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px; /* Высота линии */
+            background-color: @light_blue; /* Цвет подчеркивания при появлении линии*/
+            transition: width 0.5s;  /* Время эффекта */
+}   
+    }
+    &-phone {
+        
+        display: inline-block;
+        text-align: right;
+        font-size: 1.4rem;
+        .bold();
+        padding: 2rem;
+        a {
+            font-size: 1.2rem;
+            background: url(../img/tel.png) no-repeat center left;
+           color: @blue;
+           background-color: @light;
+           border-bottom: 1px solid @light;
+           padding: 1rem;
+           padding-left: 3.2rem;
+           border-radius: 50px;
+        }
+        a:hover {
+            font-size: 1.2rem;
+           color: @blue;
+           background: url(../img/tel2.png) no-repeat center left;
+           background-color: @light;
+           border-bottom: 1px solid @light;
+           padding: 1rem;
+           padding-left: 3.2rem;
+           border-radius: 50px;
+           transition: 0.5s
+        }
+        a.small {
+            display: none;
+        }
+    }
+    &-social {
+
+        text-align: right;
+        a.vk {
+            display: inline-block;
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            background: url(../img/vk.png) center no-repeat;
+            height: 32px;
+            width: 32px;
+        }
+        a.vk:hover {
+            background: url(../img/vk2.png) center no-repeat;
+            transition: 0.5s;
+        }
+        a.inst {
+            display: inline-block;
+            margin-top: 1.5rem;
+            margin-right: 0.5rem;
+            background: url(../img/inst.png) center no-repeat;
+            height: 32px;
+            width: 32px;
+        }
+        a.inst:hover {
+            background: url(../img/inst2.png) center no-repeat;
+            transition: 0.5s;
+        }
+    }
+}
+
+.house {
+    background: @light_blue url(../img/line.jpg) bottom right no-repeat;
+    padding: 4rem 4rem 6rem 4rem;
+    color: @blue;
+    .reg();
+    &-foto {
+        margin-left: 10rem;
+    }
+    h4 {
+        color: @light;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        .bold();
+    }
+    &-prev-btn {
+        left: -4rem;
+    }
+    &-next-btn {
+        right: -4rem;
+    }
+    &-slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4rem;
+            height: 5rem;
+            border: none;
+            background-color: @light_blue;
+            img {
+                width: 100%;
+            }
+        }
+    &-slider {
+        background-color: @light;
+        box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+        padding: 3rem 4rem;
+    }
+    &-features {
+        padding: 5rem 3rem;
+        text-align-last: left;
+        p {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        li {
+            font-size: 1.4rem;
+        }
+    }
+    &-btn {
+        text-align: center;
+        button {
+            font-size: 1.8rem;
+            margin-top: 5rem;
+            border: 1px solid @blue;
+            border-radius: 30px;
+            padding: 1rem 4rem;
+            background-color: @blue;
+            color: @light;
+        }
+    }   
+}
+.features {
+    padding: 1rem 4rem 4rem 4rem;
+    background-color: @light;
+    .reg();
+    &-block {
+        background-color: @light_blue;
+        color: @light;
+        box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+        padding: 4rem 4rem 4rem 12rem;
+        text-align: left;
+        &-list {
+            margin-bottom: 4rem;
+        }
+    }
+    h4 {
+        font-size: 2.4rem;
+        color: @light_blue;
+        margin-bottom: 2rem;
+        .bold();
+    }
+    h6 {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+        img {
+            display: inline;
+            position: absolute;
+            transform: translateX(-60px) translateY(-15px);
+        }
+}
+.active {
+    .reg();
+    background-color: @light_blue;
+    padding: 4rem;
+    h4 {
+        font-size: 2.4rem;
+        color: @light;
+        margin-bottom: 2rem;
+        .bold();
+    }
+    &-blck {
+        padding: 4rem;
+        background-color: @light;
+        color: @blue;
+    }
+    &-slider {
+        text-align: center;
+    }
+    &-block {
+        text-align: center;
+        padding: 0rem 4rem;
+        h5 {
+            text-align: center;
+            font-size: 1.6rem;
+            .bold();
+        }
+        p {
+            font-size: 1.4rem;
+            text-align: left;
+        }
+        input {
+            text-align: left;
+            display: inline;
+            border: none;
+            background: @light url(../img/tel3.png) no-repeat center left;
+            color: @light_blue;
+            padding: 0.7rem 2rem 0.7rem 3rem;
+            border-bottom: 4px solid @light_blue;
+            font-size: 1.4rem;
+            margin-right: 2rem;
+            width: 60%;
+        }
+        input:focus {
+            background: url(../img/tel4.png) no-repeat center left;
+            border-bottom: 4px solid @blue;
+            color: @blue;
+            transition: 0.5s;
+        }
+        button {
+            font-size: 1.4rem;
+            border: 1px solid @blue;
+            border-radius: 30px;
+            padding: 1rem 4rem;
+            background-color: @blue;
+            color: @light;
+        }
+    }
+    &-slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4rem;
+            height: 5rem;
+            border: none;
+            background-color: @light_blue;
+            img {
+                width: 100%;
+            }
+        }
+    &-prev-btn {
+        left: -8rem;
+    }
+    &-next-btn {
+        right: -8rem;
+    }
+}
+.where {
+    padding: 4rem;
+    .reg();
+    background-color: @light;
+    h4 {
+        font-size: 2.4rem;
+        color: @light_blue;
+        margin-bottom: 2rem;
+        .bold();    
+    }
+    &-block {
+        color: @light;
+        background-color: @light_blue;
+    }
+    &-adress {
+        padding: 4rem;
+        text-align: left;
+        h6 {
+            font-size: 1.6rem;
+            .bold();
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.modal {
+    .reg();
+    &-form {
+        padding: 2rem 4rem;
+        text-align: center;
+    }
+    &-name {
+        text-align: center;
+        input {
+            text-align: left;
+            display: block;
+            border: none;
+            background-color: @light;
+            color: @light_blue;
+            padding: 0.7rem 2rem 0.7rem 3rem;
+            border-bottom: 4px solid @light_blue;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+        input.name {
+            background: url(../img/man.png) no-repeat center left;
+        }
+        input.tel {
+            background: url(../img/tel3.png) no-repeat center left;
+        }
+        input.name:focus {
+            background: url(../img/man2.png) no-repeat center left;
+            border-bottom: 4px solid @blue;
+            color: @blue;
+            transition: 0.5s;
+        }
+        input.tel:focus {
+            background: url(../img/tel4.png) no-repeat center left;
+            border-bottom: 4px solid @blue;
+            color: @blue;
+            transition: 0.5s;
+        }
+    }
+    &-date {
+        text-align: left;
+        p {
+            display: inline-block;
+            text-align: center;
+            width: 45%;
+            margin-right: 1rem;
+            padding: 1rem 0rem;
+        }
+        input.date {
+            text-align: left;
+            display: inline;
+            border: none;
+            background: @light url(../img/date.png) no-repeat center left;
+            color: @light_blue;
+            padding: 0.7rem 2rem 0.7rem 3rem;
+            border-bottom: 4px solid @light_blue;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            width: 45%;
+            margin-right: 2%;
+            height: 3rem;
+        }
+        input.date:focus {
+            background: url(../img/date2.png) no-repeat center left;
+            border-bottom: 4px solid @blue;
+            color: @blue;
+            transition: 0.5s;
+        }
+}
+    &-header {
+        background-color: @blue;
+        padding: 1rem 4rem;
+        .bold();
+    }
+    h5 {
+        font-size: 1.8rem;
+        color: @light;
+    }
+    &-content {
+        text-align: center;
+        font-size: 1.4rem;
+        background-color: @light;
+        color: @blue;
+    }
+    &-footer {
+        background-color: @blue;
+        padding: 1rem 4rem;
+        text-align: center;
+    }
+    button.sent {
+        border: 1px solid @light_blue;
+        border-radius: 30px;
+        font-size: 1.4rem;
+        background: @light_blue url(../img/sent.png) no-repeat center left;
+        padding: 0.7rem 3rem 0.7rem 4rem;
+        color: @light;
+        .bold();
+    }
+
+}
+
+@media (max-width: 997px) {
+    .main {
+        height: 100vh;
+        min-height: 700px;
+        background: @light url(../img/mainbgtel.jpg) no-repeat center top;
+    }
+    .main-logo {
+        padding: 5rem 0.5rem;
+        color: @light;
+        nav {
+            display: block;
+            margin-top: 3rem;
+            opacity: .8;
+        }
+        img.large {
+            display: none;
+        }
+        img.tel {
+            display: inline-block;
+            height: 160px;
+        }
+    }
+    .header {
+        background: none;
+        &-logo {
+            text-align: center;
+        }
+        &-link {
+            font-size: 1.4rem;
+            margin-bottom: -4rem;
+        }
+        &-phone {
+            text-align: center;
+            font-size: 1.4rem;
+
+        }
+        &-social {
+            text-align: center;
+    }
+    }
+    .main {
+        h1 {
+            font-size: 2.8rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+    .house {
+        padding: 4rem 1rem 6rem 1rem;
+        &-foto {
+            margin-left: 0rem;
+        }
+        &-features {
+            text-align: left;
+            padding: 2rem;
+        }
+        &-btn {
+            text-align: center;
+        }
+        button {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+        }
+        &-slider-btn {
+            position: absolute;
+            top: 80%;
+            transform: translateY(-90%);
+            width: 4rem;
+            height: 5rem;
+            border: none;
+            background-color: @light_blue;
+            img {
+                width: 100%;
+            }
+        }
+        &-prev-btn {
+        left: 0rem;
+        border-radius: 0px 20px 20px 0px;
+        }
+        &-next-btn {
+        right: 0rem;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    }
+    .features {
+        padding: 2rem 1rem 4rem 1rem;
+        &-block {
+            padding: 4rem 2rem 4rem 12rem;
+        }
+        img {
+        transform: translateX(-75px) translateY(-15px);
+        }
+    }
+    .active {
+        padding: 4rem 1rem;
+        &-block {
+            padding: 0rem 0.5rem;
+            button {
+                margin-left: 0.5rem;
+                padding: 0.7rem 1rem;
+                font-size: 1.2rem;
+            }
+            input {
+                font-size: 1.2rem;
+                padding: 0.7rem 0rem 0.7rem 3rem;
+                margin-right: 0px;
+                width: 65%;
+            }
+        }
+        &-slider-btn {
+            position: absolute;
+            top: 80%;
+            transform: translateY(-90%);
+            width: 4rem;
+            height: 5rem;
+            border: none;
+            background-color: @light_blue;
+            img {
+                width: 100%;
+            }
+        }
+        &-prev-btn {
+        left: -4rem;
+        border-radius: 0px 20px 20px 0px;
+        }
+        &-next-btn {
+        right: -4rem;
+        border-radius: 20px 0px 0px 20px;
+    }
+    }
+    .where {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (min-width: 416px) and (max-width: 1200px) {
+    .header {
+        &-link {
+            margin-left: -5rem;
+        }
+        &-social {
+            display: inline;
+            text-align-last: left;
+            margin-left: -10rem;
+        }
+        &-phone {
+            font-size: 1.2rem;
+            margin-left: -7rem;
+        }
+    }
+    .features {
+        &-block {
+            padding-left: 8rem;
+        }
+        img {
+            transform: translateX(-5rem);
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .header {
+        &-logo {
+            display: none;
+        }
+        &-logotel {
+            display: block;
+            img {
+                height: 30px;
+            } 
+        }  
+        &-social {
+            margin-right: -10rem;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .header {
+        &-logo {
+            display: inline;
+
+        }
+        &-link {
+            display: none;
+        }
+        &-phone {
+            margin-left: 1rem;
+            a {
+                font-size: 1.2rem;
+            }  
+        }
+        &-social {
+            margin-left: 1rem;
+            margin-right: -10rem;
+        }
+    }
+    .house {
+        &-slider {
+            padding-top: 0rem;
+        }
+        button {
+            font-size: 1.4rem;
+            padding: 0.7rem 1rem;
+        }
+    }
+    .features {
+        &-block{
+            padding: 2rem 2rem 2rem 5rem;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            transform: translateX(-3rem);
+        }
+    }
+    .active {
+        &-block {
+            padding: 0rem 0.5rem;
+        }
+    }
+ }
