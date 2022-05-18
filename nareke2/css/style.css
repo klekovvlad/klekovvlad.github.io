@@ -527,8 +527,8 @@ a {
     opacity: 0.5;
     filter: alpha(opacity=50);
     position: fixed;
-    right: 20px;
-    bottom: 10rem;
+    left: 20px;
+    bottom: 2rem;
     color: #000;
     transition: .3s;
   }
