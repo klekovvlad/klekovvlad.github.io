@@ -506,7 +506,7 @@ a {
   opacity: 0.5;
   filter: alpha(opacity=50);
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 15rem;
   color: #000;
   transition: .3s;
