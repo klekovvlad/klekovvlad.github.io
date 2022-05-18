@@ -507,7 +507,7 @@ a {
   filter: alpha(opacity=50);
   position: fixed;
   right: 20px;
-  bottom: 10rem;
+  bottom: 15rem;
   color: #000;
   transition: .3s;
 }
@@ -523,7 +523,7 @@ a {
     bottom: 2rem;
   }
   #phoneup {
-    display: inline;
+    display: none;
     opacity: 0.5;
     filter: alpha(opacity=50);
     position: fixed;
