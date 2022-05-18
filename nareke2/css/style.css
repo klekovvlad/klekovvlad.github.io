@@ -593,15 +593,15 @@ a {
   .active {
     padding: 4rem 1rem;
   }
-  .active-slider {
+  .active-block {
     padding: 2rem;
   }
-  .active-slider button {
+  .active-block button {
     margin-left: 0.5rem;
     padding: 0.7rem 1rem;
     font-size: 1.2rem;
   }
-  .active-slider input {
+  .active-block input {
     font-size: 1.2rem;
     padding: 0.7rem 0rem 0.7rem 3rem;
     margin-right: 0px;
