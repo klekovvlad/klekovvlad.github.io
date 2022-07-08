@@ -266,7 +266,7 @@ button {
   height: 40px;
   width: 40px;
   border: none;
-  background: url(../img/prevwhite.png) no-repeat center;
+  background: url(../img/prev.png) no-repeat center;
   opacity: 0.25;
 }
 .house-box-slider button.house-box-prev:hover {
@@ -282,7 +282,7 @@ button {
   height: 40px;
   width: 40px;
   border: none;
-  background: url(../img/nextwhite.png) no-repeat center;
+  background: url(../img/next.png) no-repeat center;
   opacity: 0.25;
 }
 .house-box-slider button.house-box-next:hover {
